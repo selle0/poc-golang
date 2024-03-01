@@ -1,15 +1,15 @@
 package main_test
 
 import (
-	//"encoding/json"
+	"encoding/json"
 	main "github.com/xerardoo/poc-golang"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 )
 
-//func TestGetAllTasks(t *testing.T) {
-	//req, err := http.NewRequest("GET", "/tasks", nil)
+func TestGetAllTasks(t *testing.T) {
+	req, err := http.NewRequest("GET", "/tasks", nil)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -30,9 +30,9 @@ import (
 		t.Errorf("error parsing response body: %v", err)
 	}
 
-	//expectedLength := 2
-	//if len(response) != expectedLength {
-		//t.Errorf("handler returned unexpected task count: got %v want %v",
-			//len(response), expectedLength)
-	//}
+	expectedLength := 2
+	if len(response) != expectedLength {
+		t.Errorf("handler returned unexpected task count: got %v want %v",
+			len(response), expectedLength)
+	}
 }
