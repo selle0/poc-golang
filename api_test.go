@@ -9,7 +9,7 @@ import (
 )
 
 //func TestGetAllTasks(t *testing.T) {
-	req, err := http.NewRequest("GET", "/tasks", nil)
+	//req, err := http.NewRequest("GET", "/tasks", nil)
 	if err != nil {
 		t.Fatal(err)
 	}
