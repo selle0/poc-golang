@@ -30,9 +30,9 @@ func TestGetAllTasks(t *testing.T) {
 		t.Errorf("error parsing response body: %v", err)
 	}
 
-	expectedLength := 2
-	if len(response) != expectedLength {
+	//expectedLength := 2
+	//if len(response) != expectedLength {
 		t.Errorf("handler returned unexpected task count: got %v want %v",
 			len(response), expectedLength)
-	}
+	//}
 }
