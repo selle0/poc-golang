@@ -33,6 +33,6 @@ import (
 	//expectedLength := 2
 	//if len(response) != expectedLength {
 		//t.Errorf("handler returned unexpected task count: got %v want %v",
-			len(response), expectedLength)
+			//len(response), expectedLength)
 	//}
 }
