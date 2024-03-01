@@ -38,4 +38,5 @@ jobs:
         status: 'passed'
         text: "go CI succesfully on L"
       env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}  
+      
